@@ -3,11 +3,6 @@ interface Authenticator {
   logout(): void;
 }
 
-interface UserSettingsManager {
-  setPreference(preference: string, value: any): void;
-  getPreference(preference: string): any;
-}
-
 class SimpleAuthenticator implements Authenticator {
   login() {
     console.log("User logged in using SimpleAuthenticator");
